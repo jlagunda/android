@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/background"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@drawable/sta"
+        android:layout_height="match_parent"
+        tools:context=".game">
+
+    <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="600dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/question"
+            android:id="@+id/question"
+    />
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_height="250dp"
+            android:id="@+id/frontliner"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="2dp"/>
+
+    <RadioButton
+            android:text="Option A"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="100dp"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_width="570dp"
+            android:layout_height="25dp"
+            android:id="@+id/choice1"/>
+    <RadioButton
+            android:text="Option B"
+            android:layout_below="@id/choice1"
+
+            android:layout_marginLeft="150dp"
+            android:layout_width="570dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFFFFF"
+            android:layout_height="25dp"
+            android:id="@+id/choice2"/>
+    <RadioButton
+            android:text="Option C"
+            android:layout_below="@id/choice2"
+            android:layout_marginLeft="150dp"
+            android:layout_width="570dp"
+            android:layout_height="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:id="@+id/choice3"/>
+    <ImageView
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="150dp"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:background="@drawable/virus"
+            android:id="@+id/virus"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_below="@id/virus"
+            android:layout_marginRight="140dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="219dp"
+            android:progressDrawable="@drawable/progressbar"
+            android:layout_height="27dp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/life"/>
+
+
+</RelativeLayout>
